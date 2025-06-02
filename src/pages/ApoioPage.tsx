@@ -12,7 +12,7 @@ const ApoioPage = () => {
     {
       name: "Disque Saúde",
       number: "136",
-      description: "Canal oficial do Ministério da Saúde para informações, orientações e dúvidas sobre saúde em geral, incluindo DSTs e HIV/AIDS."
+      description: "Canal oficial do Ministério da Saúde para informações, orientações e dúvidas sobre saúde em geral, incluindo ISTs e HIV/AIDS."
     },
     {
       name: "Centro de Valorização da Vida (CVV)",

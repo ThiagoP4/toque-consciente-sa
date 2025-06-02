@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 const Index = () => {
   const dstCards = [
     {
-      title: 'Informações sobre DSTs',
+      title: 'Informações sobre ISTs',
       description: 'Conheça os sintomas, formas de transmissão, prevenção e tratamentos disponíveis.',
       action: 'Saiba mais',
       link: '/infos',
@@ -51,7 +51,7 @@ const Index = () => {
                 Informação é o primeiro passo para a prevenção
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8">
-                Educação, informação e apoio relacionados a DSTs de forma clara e sem julgamentos.
+                Educação, informação e apoio relacionados a ISTs de forma clara e sem julgamentos.
                 Aqui você encontra recursos para se cuidar e proteger quem você ama.
               </p>
               <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-lg px-8 py-6 rounded-xl">
@@ -92,7 +92,7 @@ const Index = () => {
                 Por que isso é importante?
               </h2>
               <p className="text-lg text-gray-600">
-                No Brasil, as DSTs são uma questão de saúde pública que afeta milhões de pessoas.
+                No Brasil, as ISTs são uma questão de saúde pública que afeta milhões de pessoas.
                 A informação correta pode fazer toda a diferença.
               </p>
             </div>
@@ -112,7 +112,7 @@ const Index = () => {
               </div>
               <div className="bg-white p-8 rounded-xl shadow-sm">
                 <p className="text-4xl font-bold text-blue-500 mb-2">100%</p>
-                <p className="text-gray-600">Das DSTs são preveníveis com informação correta</p>
+                <p className="text-gray-600">Das ISTs são preveníveis com informação correta</p>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const InfosPage = () => {
   const [activeTab, setActiveTab] = useState("hiv");
 
-  // Dados sobre DSTs
+  // Dados sobre ISTs
   const dstData = {
     hiv: {
       title: "HIV/AIDS",
@@ -150,7 +150,7 @@ const InfosPage = () => {
         {/* Header Section */}
         <section className="bg-gradient-to-r from-blue-50 to-lilac-50 py-12">
           <div className="container-page">
-            <h1 className="text-4xl font-bold mb-4">Informações sobre DSTs</h1>
+            <h1 className="text-4xl font-bold mb-4">Informações sobre ISTs</h1>
             <p className="text-lg text-gray-700 max-w-3xl">
               Conhecer os sintomas, formas de transmissão, prevenção e tratamentos disponíveis
               é essencial para cuidar da sua saúde sexual. Explore as informações abaixo.
@@ -258,7 +258,7 @@ const InfosPage = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-xl mb-2">Ministério da Saúde</h3>
                   <p className="text-gray-600 mb-4">
-                    Acesse materiais oficiais e campanhas do Ministério da Saúde sobre DSTs.
+                    Acesse materiais oficiais e campanhas do Ministério da Saúde sobre ISTs.
                   </p>
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">

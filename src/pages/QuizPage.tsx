@@ -28,10 +28,10 @@ const QuizPage = () => {
         'Só é necessário usar no momento da ejaculação',
         'Deve ser usado em todas as relações sexuais, do início ao fim',
         'Pode ser reutilizado se lavado adequadamente',
-        'Protege apenas contra gravidez, não contra DSTs'
+        'Protege apenas contra gravidez, não contra ISTs'
       ],
       correctAnswer: 'Deve ser usado em todas as relações sexuais, do início ao fim',
-      explanation: 'O preservativo deve ser usado durante toda a relação sexual, desde o início até o fim, para garantir proteção eficaz contra DSTs e gravidez não planejada.'
+      explanation: 'O preservativo deve ser usado durante toda a relação sexual, desde o início até o fim, para garantir proteção eficaz contra ISTs e gravidez não planejada.'
     },
     {
       question: 'O que é a PrEP (Profilaxia Pré-Exposição)?',
@@ -45,7 +45,7 @@ const QuizPage = () => {
       explanation: 'A PrEP é um medicamento antirretroviral tomado diariamente por pessoas HIV negativas para prevenir a infecção pelo vírus antes de uma possível exposição.'
     },
     {
-      question: 'Qual das seguintes DSTs pode ser prevenida através de vacinação?',
+      question: 'Qual das seguintes ISTs pode ser prevenida através de vacinação?',
       options: [
         'HIV/AIDS',
         'Sífilis',
@@ -53,7 +53,7 @@ const QuizPage = () => {
         'Gonorreia'
       ],
       correctAnswer: 'HPV',
-      explanation: 'O HPV é a única DST desta lista que possui vacina disponível. No Brasil, a vacina contra o HPV é oferecida gratuitamente pelo SUS para meninas de 9 a 14 anos e meninos de 11 a 14 anos.'
+      explanation: 'O HPV é a única IST desta lista que possui vacina disponível. No Brasil, a vacina contra o HPV é oferecida gratuitamente pelo SUS para meninas de 9 a 14 anos e meninos de 11 a 14 anos.'
     },
     {
       question: 'Qual o significado de uma pessoa com HIV ter "carga viral indetectável"?',
@@ -117,9 +117,9 @@ const QuizPage = () => {
     if (percentage >= 80) {
       return {
         title: "Excelente conhecimento!",
-        message: "Você demonstra ter bom conhecimento sobre prevenção de DSTs. Continue se mantendo informado(a) e compartilhe esse conhecimento com outras pessoas.",
+        message: "Você demonstra ter bom conhecimento sobre prevenção de ISTs. Continue se mantendo informado(a) e compartilhe esse conhecimento com outras pessoas.",
         tips: [
-          "Considere fazer testes regulares para DSTs, mesmo estando bem informado(a).",
+          "Considere fazer testes regulares para ISTs, mesmo estando bem informado(a).",
           "Mantenha-se atualizado(a) sobre novas informações e métodos de prevenção.",
           "Seja um multiplicador de conhecimento entre amigos e familiares."
         ]
@@ -127,7 +127,7 @@ const QuizPage = () => {
     } else if (percentage >= 60) {
       return {
         title: "Bom conhecimento!",
-        message: "Você tem um bom conhecimento sobre DSTs, mas ainda há espaço para aprender mais e se proteger melhor.",
+        message: "Você tem um bom conhecimento sobre ISTs, mas ainda há espaço para aprender mais e se proteger melhor.",
         tips: [
           "Explore nossa seção de informações para aprofundar seu conhecimento.",
           "Lembre-se de usar preservativos em todas as relações sexuais.",
@@ -137,11 +137,11 @@ const QuizPage = () => {
     } else {
       return {
         title: "Vamos aprender mais!",
-        message: "Há várias informações importantes sobre DSTs que podem ajudar você a se proteger melhor.",
+        message: "Há várias informações importantes sobre ISTs que podem ajudar você a se proteger melhor.",
         tips: [
-          "Dedique um tempo para ler nossa seção de informações sobre DSTs.",
+          "Dedique um tempo para ler nossa seção de informações sobre ISTs.",
           "Use sempre preservativos em relações sexuais.",
-          "Faça testes regulares para DSTs, mesmo sem sintomas.",
+          "Faça testes regulares para ISTs, mesmo sem sintomas.",
           "Converse com profissionais de saúde para esclarecer suas dúvidas."
         ]
       };
@@ -158,9 +158,9 @@ const QuizPage = () => {
         {/* Header */}
         <section className="bg-gradient-to-r from-blue-50 to-green-50 py-12">
           <div className="container-page">
-            <h1 className="text-4xl font-bold mb-4">Quiz Educativo sobre DSTs</h1>
+            <h1 className="text-4xl font-bold mb-4">Quiz Educativo sobre ISTs</h1>
             <p className="text-lg text-gray-700 max-w-3xl">
-              Teste seus conhecimentos sobre prevenção, transmissão e tratamento de DSTs.
+              Teste seus conhecimentos sobre prevenção, transmissão e tratamento de ISTs.
               Ao final, você receberá dicas personalizadas com base nas suas respostas.
             </p>
           </div>
@@ -311,7 +311,7 @@ const QuizPage = () => {
                     Refazer o quiz
                   </Button>
                   <Button asChild className="w-full sm:w-auto">
-                    <a href="/infos">Explorar informações sobre DSTs</a>
+                    <a href="/infos">Explorar informações sobre ISTs</a>
                   </Button>
                 </CardFooter>
               </Card>
