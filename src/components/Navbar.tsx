@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -19,10 +20,11 @@ const Navbar = () => {
     { title: 'Lembrete', path: '/lembrete' },
     { title: 'Apoio', path: '/apoio' },
     { title: 'Contato', path: '/contato' },
+    { title: 'Opções', path: '/opcoes' },
   ];
 
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
+    <nav className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50">
       <div className="container-page py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
@@ -37,7 +39,7 @@ const Navbar = () => {
               <Link
                 key={index}
                 to={link.path}
-                className="font-medium text-gray-600 hover:text-blue-500 transition-colors"
+                className="font-medium text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
               >
                 {link.title}
               </Link>
@@ -69,7 +71,7 @@ const Navbar = () => {
               <Link
                 key={index}
                 to={link.path}
-                className="font-medium text-gray-600 hover:text-blue-500 transition-colors py-2 px-4 rounded-md hover:bg-gray-50"
+                className="font-medium text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors py-2 px-4 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.title}
