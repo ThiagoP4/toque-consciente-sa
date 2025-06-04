@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Calendar } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -30,11 +31,12 @@ const Index = () => {
       bgColor: 'bg-lilac-400'
     },
     {
-      title: 'Autoavaliação',
-      description: 'Responda algumas perguntas sobre sintomas e receba orientações.',
-      action: 'Fazer avaliação',
-      link: '/autoavaliacao',
-      bgColor: 'bg-blue-400'
+      title: 'Lembrete',
+      description: 'Agende lembretes para exames regulares e consultas de rotina.',
+      action: 'Agendar no Google',
+      link: 'https://calendar.google.com/calendar/u/0/r/eventedit?text=Lembrete+de+Exame+de+Sa%C3%BAde&dates=&details=Lembrete+para+realizar+exames+de+rotina+e+consultas+preventivas',
+      bgColor: 'bg-blue-400',
+      isExternal: true
     }
   ];
 
@@ -72,10 +74,19 @@ const Index = () => {
                 <Card key={index} className="card-hover border-none overflow-hidden">
                   <div className={`h-2 ${card.bgColor}`}></div>
                   <CardContent className="pt-6">
-                    <h3 className="text-xl font-bold mb-2">{card.title}</h3>
+                    <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                      {card.title === 'Lembrete' && <Calendar size={20} />}
+                      {card.title}
+                    </h3>
                     <p className="text-gray-600 mb-4">{card.description}</p>
                     <Button variant="outline" asChild>
-                      <Link to={card.link}>{card.action}</Link>
+                      {card.isExternal ? (
+                        <a href={card.link} target="_blank" rel="noopener noreferrer">
+                          {card.action}
+                        </a>
+                      ) : (
+                        <Link to={card.link}>{card.action}</Link>
+                      )}
                     </Button>
                   </CardContent>
                 </Card>

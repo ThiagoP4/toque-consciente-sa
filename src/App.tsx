@@ -27,7 +27,6 @@ const App = () => (
           <Route path="/apoio" element={<ApoioPage />} />
           <Route path="/contato" element={<ContatoPage />} />
           <Route path="/locais" element={<EmBreve />} />
-          <Route path="/autoavaliacao" element={<EmBreve />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

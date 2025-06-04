@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -17,7 +16,6 @@ const Navbar = () => {
     { title: 'Informações', path: '/infos' },
     { title: 'Quiz', path: '/quiz' },
     { title: 'Locais de Atendimento', path: '/locais' },
-    { title: 'Autoavaliação', path: '/autoavaliacao' },
     { title: 'Apoio', path: '/apoio' },
     { title: 'Contato', path: '/contato' },
   ];
