@@ -16,6 +16,7 @@ const Navbar = () => {
     { title: 'Informações', path: '/infos' },
     { title: 'Quiz', path: '/quiz' },
     { title: 'Locais de Atendimento', path: '/locais' },
+    { title: 'Lembrete', path: '/lembrete' },
     { title: 'Apoio', path: '/apoio' },
     { title: 'Contato', path: '/contato' },
   ];
